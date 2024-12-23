@@ -1,0 +1,56 @@
+moneroclassic-v0.18.2.2.0版本修改内容
+=====================================
+
+1. 去掉了MoneroPulse 硬编码的域名，屏蔽了从getmonero.org下载和更新可执行文件的URL;
+
+2. 降低了v1-v16版本的mainnet, testnet 和stagenet的分叉高度；
+
+3. 去掉了硬编码的monero种子节点域名解析；
+
+4. 屏蔽了mainnet, testnet 和 stagenet的checkpoints校验;
+
+5. 修改了编译输出的damon和工具可执行文件名，包括monerod、monero-wallet-cli、monero-wallet-rpc
+等修改为 moneroclassicd、 moneroclassic-wallet-cli、moneroclassic-wallet-rpc等;
+
+6. 修改了默认的数据目录，以及部分日志打印的monero修改为moneroclassic;
+
+7. 增加了创世区块的数据以及创世地址的生成代码，暂未启用。
+
+--------------------------------------------
+
+xmc-v0.18.2.2.1版本修改内容
+===============================
+
+1. 基于xmc-v0.18.2.2.0版本上做修改；
+
+2. 修复了RandomX挖矿算法在初始化的时候出现coredump的错误；
+
+
+--------------------------------------------
+
+xmc-v0.18.2.2.2版本修改内容
+===============================
+
+1. 基于xmc-v0.18.2.2.1版本上做修改；
+
+2. 修改了networkid和genesisConfig信息；
+
+3. 将所有的分叉版本都修改为使用 cn-0 挖矿算法；
+
+4. 移除了monero硬编码的DS信息；
+
+5. 移除了monero 硬编码的Onion网络种子节点信息；
+
+6. 修复了在同步完节点数据后，启动挖矿的时候出现`mining has NOT been started: daemon is busy`的bug;
+
+7. 屏蔽了RandomX算法挖矿的分叉代码
+
+
+--------------------------------------------
+
+xmc-v0.18.2.2.2版本修改内容
+===============================
+
+1. 增加了预挖的代码，初始100个区块，每个区块预挖96000 XMC；
+
+2. 屏蔽了每次启动节点会打印genesis信息的日志；
