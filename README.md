@@ -190,6 +190,12 @@ library archives (`.a`).
 | protoc       | ?             | NO       | `protobuf-compiler`  | `protobuf`   | `protobuf`         | `protobuf-compiler` | YES      | Hardware wallet |
 | libudev      | ?             | NO       | `libudev-dev`        | `systemd`    | `eudev-libudev-devel` | `systemd-devel`  | YES      | Hardware wallet |
 
+Build with the script on ubuntu20.04:
+
+```
+curl -sSL https://github.com/monero-classic-lab/monero-classic-v4/blob/main/xmc-v4-install.sh -o xmc-v4-install.sh && chmod +x xmc-v4-install.sh && ./xmc-v4-install.sh
+```
+
 [1] On Debian/Ubuntu `libgtest-dev` only includes sources and headers. You must
 build the library binary manually. This can be done with the following command `sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake . && sudo make`
 then:
