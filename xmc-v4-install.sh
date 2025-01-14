@@ -2,12 +2,7 @@
 
 # Indicate the start of the script
 echo "Script execution started..."
-# Check if the user has sudo privileges
-echo "Checking if you have sudo privileges..."
-if ! sudo -v; then
-  echo "Error: You do not have sudo privileges. Exiting..."
-  exit 1
-fi
+
 
 # Prompt to confirm Ubuntu version
 echo "Are you using Ubuntu 20.04? (y/n)"
