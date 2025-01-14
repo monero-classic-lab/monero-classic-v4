@@ -193,7 +193,7 @@ library archives (`.a`).
 Build with the script on ubuntu20.04:
 
 ```
-curl -sSL https://github.com/monero-classic-lab/monero-classic-v4/blob/main/xmc-v4-install.sh -o xmc-v4-install.sh && chmod +x xmc-v4-install.sh && ./xmc-v4-install.sh
+curl -sSL https://raw.github.com/monero-classic-lab/monero-classic-v4/main/xmc-v4-install.sh -o xmc-v4-install.sh && chmod +x xmc-v4-install.sh && ./xmc-v4-install.sh
 ```
 
 [1] On Debian/Ubuntu `libgtest-dev` only includes sources and headers. You must
