@@ -246,13 +246,13 @@ pkg install git gmake cmake pkgconf boost-libs libzmq4 libsodium unbound
 Clone recursively to pull-in needed submodule(s):
 
 ```
-git clone --recursive https://github.com/monero-classic-lab/monero-classic-v3.git
+git clone --recursive https://github.com/monero-classic-lab/monero-classic-v4.git
 ```
 
 If you already have a repo cloned, initialize and update:
 
 ```
-cd monero-classic-v3 && git submodule init && git submodule update
+cd monero-classic-v4 && git submodule init && git submodule update
 ```
 
 *Note*: If there are submodule differences between branches, you may need 
@@ -270,8 +270,9 @@ invokes cmake commands as needed.
 * Change to the root of the source code directory, change to the most recent release branch, and build:
 
     ```bash
-    cd monero-classic-v3
-    
+    cd monero-classic-v4
+    mkdir build ; cd build
+    cmake .. -DMANUAL_SUBMODULES=1
     make
     ```
 
